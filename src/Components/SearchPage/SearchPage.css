@@ -1,0 +1,161 @@
+/* Layout Containers */
+.container {
+  padding-top: 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Dog Cards */
+.dog-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.dog-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 250px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 0.25;
+}
+
+.dog-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.dog-image:hover {
+  transform: scale(1.05);
+}
+
+/* Buttons */
+.button,
+.match-button,
+.clear-button,
+.fav-button,
+.fav-button-active,
+.close-modal-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  min-width: 150px;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.match-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+}
+
+.clear-button {
+  background-color: #e74c3c;
+  color: white;
+  border: 1px solid #ccc;
+}
+
+.fav-button {
+  margin-top: 10px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+}
+
+.fav-button-active {
+  margin-top: 10px;
+  background-color: gold;
+  border: 1px solid #ccc;
+}
+
+.close-modal-button {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  gap: 0.5rem;
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+/* Icons */
+.icon {
+  margin-right: 4px;
+  vertical-align: middle;
+  font-size: 1.2em;
+}
+
+.favorite-status {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem; /* Adjust spacing between icon and text */
+}
+
+.star-icon {
+  font-size: 1.2rem; /* Optional: adjust icon size */
+}
+
+/* .search-page-cursor {
+  cursor:
+    url("../Assets/dog-cursor.png") 16 16,
+    auto;
+} */
+
+/* a,
+.button,
+.match-button,
+.clear-button,
+.fav-button,
+.fav-button-active,
+.close-modal-button,
+.select,
+.input,
+.pointer-cursor,
+.slider-container {
+  cursor: url("../Assets/dog-pointer.png"), pointer;
+} */

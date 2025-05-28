@@ -1,0 +1,101 @@
+.controls {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+.controls > * {
+  flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+  .controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+/* Age Slider */
+.slider-container {
+  min-width: 150px;
+}
+.slider-container .rc-slider-track {
+  background-color: #28a745;
+}
+
+.slider-container .rc-slider-rail {
+  background-color: #ccc;
+}
+
+.slider-container .rc-slider-handle {
+  background-color: #ffffff;
+  border: 2px solid #28a745;
+}
+
+.slider-container .rc-slider-handle:active {
+  border-color: #1e7e34;
+  box-shadow: 0 0 5px #1e7e34;
+}
+
+.slider-container .rc-slider-track:hover {
+  background-color: #218838;
+}
+
+.slider-container .rc-slider-handle:hover {
+  border-color: #218838;
+}
+
+/* Form Inputs (Selects & Text Inputs) */
+.select,
+.input {
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  min-width: 200px;
+  height: 40px;
+  box-sizing: border-box;
+}
+
+/* Buttons */
+.button,
+.match-button,
+.clear-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  min-width: 150px;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.match-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+}
+
+.clear-button {
+  background-color: #e74c3c;
+  color: white;
+  border: 1px solid #ccc;
+}
+
+/* Icons */
+.icon {
+  margin-right: 4px;
+  vertical-align: middle;
+  font-size: 1.2em;
+}

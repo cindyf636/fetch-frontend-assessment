@@ -1,0 +1,70 @@
+/* MatchPage.css */
+
+.match-container {
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.match-dog-card {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+}
+
+.match-dog-image {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.match-back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.match-back-button .icon {
+  font-size: 1.4rem;
+  color: #333;
+}
+.match-back-button:hover {
+  background-color: #e0e0e0;
+}
+
+.match-loading {
+  margin-top: 100px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.loader-container {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+.loader-container p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #555;
+  text-align: center;
+}
+
+.heart-eyes-icon {
+  padding-right: 8px;
+  font-size: 1.5rem;
+}
