@@ -24,8 +24,8 @@ function SearchPage() {
   const [zipCode, setZipCode] = useState("");
   const [sortValue, setSortValue] = useState("name:asc");
   const [pageSize, setPageSize] = useState(10);
-  const [ageRangeInput, setAgeRangeInput] = useState([0, 20]); // Slider input
-  const [appliedAgeRange, setAppliedAgeRange] = useState([0, 20]); // Applied filter
+  const [ageRangeInput, setAgeRangeInput] = useState([0, 20]);
+  const [appliedAgeRange, setAppliedAgeRange] = useState([0, 20]);
   const [selectedDog, setSelectedDog] = useState(null);
   const [showNoDogsModal, setShowNoDogsModal] = useState(false);
 
@@ -114,32 +114,6 @@ function SearchPage() {
       setAppliedAgeRange(range);
     }
   }, [location.search]);
-
-  const applyFilters = () => {
-    const params = new URLSearchParams();
-    if (selectedBreed) params.set("breeds", selectedBreed);
-    if (sortValue) params.set("sort", sortValue);
-    if (pageSize) params.set("size", pageSize);
-    if (zipCode) params.set("zipCodes", zipCode);
-    if (ageRangeInput) {
-      params.set("ageMin", ageRangeInput[0]);
-      params.set("ageMax", ageRangeInput[1]);
-    }
-    setAppliedAgeRange(ageRangeInput);
-    navigate(`/search?${params.toString()}`);
-  };
-
-  const clearFilters = () => {
-    setSelectedBreed("");
-    setZipCode("");
-    setSortValue("name:asc");
-    setPageSize(10);
-    setAgeRangeInput([0, 20]);
-    setAppliedAgeRange([0, 20]);
-    const params = new URLSearchParams();
-    params.set("size", 10);
-    navigate(`/search?${params.toString()}`);
-  };
 
   const changePageHandler = (direction) => {
     const path = paginationData[direction];

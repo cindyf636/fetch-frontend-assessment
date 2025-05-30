@@ -44,7 +44,7 @@ function FilterControls({
         onChange={(e) => setSortValue(e.target.value)}
         className="select"
       >
-        <option>Sort by Name</option>
+        <option value="name:asc">Sort by Name</option>
         <option value="name:asc">Name A → Z</option>
         <option value="name:desc">Name Z → A</option>
       </select>
@@ -68,7 +68,7 @@ function FilterControls({
         onChange={(e) => setPageSize(parseInt(e.target.value))}
         className="select"
       >
-        <option>Number of Dogs</option>
+        <option value={10}>Number of Dogs</option>
         <option value={5}>5 per page</option>
         <option value={10}>10 per page</option>
         <option value={15}>15 per page</option>

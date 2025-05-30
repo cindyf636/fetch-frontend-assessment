@@ -140,22 +140,8 @@
   font-size: 1.2rem; /* Optional: adjust icon size */
 }
 
-/* .search-page-cursor {
+.search-page-cursor {
   cursor:
     url("../Assets/dog-cursor.png") 16 16,
     auto;
-} */
-
-/* a,
-.button,
-.match-button,
-.clear-button,
-.fav-button,
-.fav-button-active,
-.close-modal-button,
-.select,
-.input,
-.pointer-cursor,
-.slider-container {
-  cursor: url("../Assets/dog-pointer.png"), pointer;
-} */
+}
