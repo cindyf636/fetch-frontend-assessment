@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/fetch-frontend-assessment/static/css/main.9f33f6b3.css",
+    "main.js": "/fetch-frontend-assessment/static/js/main.a7acfced.js",
+    "static/media/fetch_navbar_logo.jpeg": "/fetch-frontend-assessment/static/media/fetch_navbar_logo.a06fd94d823e15c1740b.jpeg",
+    "static/media/fetch-rewards.svg": "/fetch-frontend-assessment/static/media/fetch-rewards.21c14cfcbf125a34f73b8316b95d5daa.svg",
+    "index.html": "/fetch-frontend-assessment/index.html",
+    "main.9f33f6b3.css.map": "/fetch-frontend-assessment/static/css/main.9f33f6b3.css.map",
+    "main.a7acfced.js.map": "/fetch-frontend-assessment/static/js/main.a7acfced.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9f33f6b3.css",
+    "static/js/main.a7acfced.js"
+  ]
+}
