@@ -3,6 +3,11 @@
 A React application for browsing adoptable dogs, applying filters, and matching with a favorite dog. Built as a take-home assignment for Fetch.
 
 ---
+## 🌐 Live Demo
+Visit the deployed site here:  
+[**Link**](https://cindyf636.github.io/fetch-frontend-assessment)
+
+---
 
 ## 🚀 Features
 
@@ -26,15 +31,13 @@ A React application for browsing adoptable dogs, applying filters, and matching 
 - **CSS Modules / Custom CSS** for styling
 
 ---
+## 🏗 Installation
 
-## 📦 Installation
+### 1️⃣ Clone the repository:
+git clone https://github.com/cindyf636/fetch-frontend-assessment.git
 
-```bash
-# Clone the repository
-git clone https://github.com/your-username/fetch-dog-match-app.git
-cd fetch-dog-match-app
-
-# Install dependencies
+### 2️⃣ Install dependencies:
 npm install
 
-# Run
+### 3️⃣ Start the development server:
+npm start
