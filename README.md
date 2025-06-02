@@ -5,7 +5,7 @@ A React application for browsing adoptable dogs, applying filters, and matching 
 ---
 ## 🌐 Live Demo
 Visit the deployed site here:  
-[**Link**](https://cindyf636.github.io/fetch-frontend-assessment)
+[**Link**](https://cindyf636.github.io/fetch-frontend-assessment/)
 
 ---
 
